@@ -1,0 +1,93 @@
+<!-- <div class="container col-md-5">
+  <h1 style="color: red">Add Books Here</h1>
+
+  <form>
+<div class="form-group">
+  <div style="color:red", *ngIf="valid">please fill</div>
+  
+
+
+  <div class="mb-3">
+   <label for="exampleFormControlInput1" class="form-label"><span style="color:red" id="asterisk">*</span> Enter BookName</label>
+   <input type="text" name="bookName" [(ngModel)]="book.bookName" class="form-control" required>
+  </div>
+</div>
+  <div class="mb-3">
+   <label for="exampleFormControlInput1" class="form-label"><span style="color:red" id="asterisk">*</span> Enter BookAuthor</label>
+   <input type="text" name="bookName" [(ngModel)]="book.bookAuthor" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label"><span style="color:red" id="asterisk">*</span> Enter BookPrice</label>
+    <input type="text" name="bookName" [(ngModel)]="book.bookPrice" class="form-control" required>
+   </div>
+   <button type="submit" class="btn btn-primary" (click)="addBook()" >ADD BOOK</button>&nbsp;&nbsp;
+   <button type="submit" class="btn btn-primary" (click)="cancel()">CANCEL BOOK</button><br><br>
+   <button type="submit" class="btn btn-primary" (click)="getBookList()" routerLink="/view">View Book</button>
+</form>
+</div> -->
+
+<section class="h-100 bg-dark">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img style="height: 700px;"
+                src="..//..//../assets/Image_book/book8.png" alt="Online Pizza Order" class="img-fluid" />
+             
+            </div>
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+                <h5>Add Books Here</h5><br>
+
+             
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <div style="color: red;" *ngIf="valid">Please fill all mandatory fields</div>
+                      <span style="color:red" id="asterisk">*</span>
+                      Enter Book Name:<input type="text" class="form-control form-control-lg" name="book.bookName"
+                        [(ngModel)]="book.bookName">
+
+                    </div>
+                  </div>
+</div>
+<div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <span style="color:red" id="asterisk">*</span>
+                      Enter Book Author:<input type="text" class="form-control form-control-lg" name="book.bookAuthor"
+                        [(ngModel)]="book.bookAuthor">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <span style="color:red" id="asterisk">*</span>
+                      Enter Book Price:<input type="text" class="form-control form-control-lg"
+                        name="book.bookPrice" [(ngModel)]="book.bookPrice">
+
+                    </div>
+                  </div>
+                </div>
+               
+            
+
+                <div>
+                  <button type="button" class="btn btn-success btn-lg " (click)="addBook()">Add BOOK</button> &nbsp; &nbsp;
+                  <button type="submit" class="btn btn-primary btn-lg" (click)="getBookList()" routerLink="/view">View Book</button> &nbsp; &nbsp;
+                  <button type="button" class="btn btn-warning btn-lg" (click)="cancel()">Cancel</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
